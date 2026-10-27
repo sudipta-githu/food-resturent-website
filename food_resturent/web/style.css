@@ -1,0 +1,476 @@
+/* =========================
+   Google Font
+========================= */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fff8f2;
+    color: #222;
+    overflow-x: hidden;
+}
+
+/* =========================
+   Global
+========================= */
+
+.container{
+    margin-top: 40px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+section{
+    padding: 60px 0;
+}
+
+h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-weight: 700;
+}
+
+h3{
+    font-weight: 600;
+}
+
+p{
+    color: #666;
+    line-height: 1.8;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    background: #fff !important;
+    border-radius: 20px;
+    padding: 18px 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    
+}
+
+.navbar-brand img{
+    width: 120px;
+    margin-top: -35px;
+}
+
+.nav-link{
+    color: #111 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: 0.3s;
+    margin-top: -30px;
+}
+
+.nav-link:hover{
+    color: #ff6b00 !important;
+}
+
+.nav_button{
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.4s;
+    margin-top: -30px;
+}
+
+.btn,
+button{
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn:hover,
+button:hover{
+    background: #111;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero-section{
+    padding: 80px 0;
+}
+
+.hero-section h5{
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+.hero-section img{
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* =========================
+   Category Box
+========================= */
+
+.col-md-3 .row{
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.4s;
+    margin-bottom: 25px;
+}
+
+.col-md-3 .row:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.col-md-3 i{
+    font-size: 40px;
+    color: #ff6b00;
+}
+
+/* =========================
+   About
+========================= */
+
+.about-section img{
+    border-radius: 20px;
+}
+
+.about-section i{
+    color: #ff6b00;
+    font-size: 30px;
+}
+
+/* =========================
+   Discount Section
+========================= */
+
+.discount-box{
+    background: linear-gradient(to right,#ff6b00,#ff914d);
+    padding: 50px;
+    border-radius: 30px;
+    color: white;
+}
+
+.discount-box h1{
+    color: white;
+}
+
+/* =========================
+   Booking Form
+========================= */
+
+input,
+select{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input:focus,
+select:focus{
+    border-color: #ff6b00;
+}
+
+/* =========================
+   Menu List
+========================= */
+
+.price{
+    color: #ff6b00 !important;
+    font-weight: 700;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #111;
+    background: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu a:hover,
+.menu .active{
+    background: #ff6b00;
+    color: white;
+}
+
+/* =========================
+   Product Cards
+========================= */
+
+.col-md-4{
+    margin-bottom: 30px;
+}
+
+.col-md-4 img{
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.col-md-4 img:hover{
+    transform: scale(1.03);
+}
+
+.col-md-4 > div{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* =========================
+   Rating
+========================= */
+
+.rating{
+    color: gold;
+    font-size: 14px;
+}
+
+/* =========================
+   Gallery
+========================= */
+
+.gallery{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding: 40px;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 25%;
+    height: 450px;
+    border: none;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+    color: white;
+}
+
+/* =========================
+   Chef Section
+========================= */
+
+.chef-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chef-card{
+    width: 350px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.chef-card:hover{
+    transform: translateY(-10px);
+}
+
+.chef-info{
+    padding: 25px;
+    text-align: center;
+}
+
+.social-icons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons i{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff6b00;
+    transition: 0.3s;
+}
+
+.social-icons i:hover{
+    background: #ff6b00;
+    color: white;
+}
+
+/* =========================
+   Video Section
+========================= */
+
+.video-section{
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.video-section img{
+    border-radius: 25px;
+}
+
+.play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer,
+section:last-child{
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+ul{
+    padding-left: 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin-in{
+    margin-right: 10px;
+    color: #ff6b00;
+    cursor: pointer;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:991px){
+
+    h1{
+        font-size: 38px;
+    }
+
+    .gallery{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 48%;
+    }
+
+    .chef-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:767px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 15px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .menu a{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+
+.ourblog{
+  text-align: center;
+}
